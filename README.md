@@ -8,7 +8,7 @@ validation. This project involved designing and fabricating a custom chassis
 from raw mild steel, integrating a high-voltage battery pack, and validating 
 structural integrity through SolidWorks FEA before committing to fabrication.
 
-**Key specs:**
+**Key Specs:**
 - 72V 3000W brushless motor
 - 6× 12V 22Ah Lead Acid AGM batteries in series
 - ASTM A36 mild steel chassis, MIG welded
@@ -51,7 +51,7 @@ against yielding. Maximum deflection was **0.9cm**.
 ## Testing & Optimisation
 Conducted physical testing to validate vehicle kinematics and load distribution. 
 Employed iterative slow-motion video analysis using mounted phone cameras to 
-diagnose drivetrain issues — during initial powertrain integration, the chain 
+diagnose drivetrain issues. During initial powertrain integration, the chain 
 repeatedly slipped under load. A phone was mounted inside the drivetrain 
 compartment to capture slow-motion footage of the chain under operation, 
 revealing that the sprocket had been welded onto the axle at a slight angular 
