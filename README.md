@@ -1,6 +1,6 @@
 # Electric Go-Kart Engineering & Fabrication
 
-Designed and fabricated a full electric go-kart from scratch, covering structural 
+Co-designed and fabricated a full electric go-kart from scratch, covering structural 
 design, FEA simulation, MIG fabrication, and powertrain integration.
 
 ## Overview
