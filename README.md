@@ -1,8 +1,7 @@
 # Electric Go-Kart Engineering & Fabrication
 
-Collaboratively designed and fabricated a full electric go-kart from scratch, 
-covering structural design, FEA simulation, MIG fabrication, and powertrain 
-integration.
+Designed and fabricated a full electric go-kart from scratch, covering structural 
+design, FEA simulation, MIG fabrication, and powertrain integration.
 
 ## Overview
 
@@ -25,8 +24,10 @@ under conservative loading conditions:
 - Occupant load: 150kg (>2× maximum rider weight)
 - Battery load: 100kg (>2× actual battery weight of 42kg)
 
-Localised stress concentrations at boundary condition nodes were identified 
-as meshing artefacts and excluded from the analysis — representative peak 
+The stress concentrations at pinned corners were identified as due to the force
+being applied over an unreasonably small area, and were disregarded as the
+realistic force distribution for the corners would be over a larger area. Hence,
+after excluding the unreasonable peaks the representative peak 
 stress in the loaded structure was ~108 MPa, giving a **Factor of Safety > 2** 
 against yielding. Maximum deflection was **0.9cm**.
 
@@ -54,9 +55,14 @@ against yielding. Maximum deflection was **0.9cm**.
 
 ## Testing & Optimisation
 
-Conducted physical testing to validate vehicle kinematics and load 
-distribution, iteratively refining the powertrain configuration for 
-optimal performance.
+Conducted physical testing to validate vehicle kinematics and load distribution. 
+Employed iterative slow-motion video analysis using mounted phone cameras to 
+diagnose drivetrain issues — during initial powertrain integration, the chain 
+repeatedly slipped under load. A phone was mounted inside the drivetrain 
+compartment to capture slow-motion footage of the chain under operation, 
+revealing that the sprocket had been welded onto the axle at a slight angular 
+offset, causing consistent chain slip to one side. The sprocket was re-welded 
+to correct the alignment, resolving the issue.
 
 ![Testing](images/testing.png)
 
@@ -78,4 +84,6 @@ optimal performance.
 - Structural analysis and load case definition
 - Gasless MIG welding and sheet metal fabrication
 - High-voltage battery pack integration and wiring
-- Powertrain integration and physical testing
+- Powertrain integration and drivetrain assembly
+- Iterative fault diagnosis using slow-motion video analysis
+- Physical testing and root cause analysis
